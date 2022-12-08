@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19EDF117-7502-4FF3-B503-CAFBE2919BA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Practica_semana_10</RootNamespace>
+    <AssemblyName>Practica semana 10</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942" />
+    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604" />
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d" />
+    <Reference Include="MySql.Data, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acercade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acercade.Designer.cs">
+      <DependentUpon>acercade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agregarautores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarautores.Designer.cs">
+      <DependentUpon>agregarautores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agregareditoriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregareditoriales.Designer.cs">
+      <DependentUpon>agregareditoriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agregarempleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarempleados.Designer.cs">
+      <DependentUpon>agregarempleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agregarprestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarprestamos.Designer.cs">
+      <DependentUpon>agregarprestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agregarproveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarproveedores.Designer.cs">
+      <DependentUpon>agregarproveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agregralibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregralibros.Designer.cs">
+      <DependentUpon>agregralibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArtanPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="autores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autores.Designer.cs">
+      <DependentUpon>autores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bibliotecaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bibliotecaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="contactos1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contactos1.Designer.cs">
+      <DependentUpon>contactos1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editoriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editoriales.Designer.cs">
+      <DependentUpon>editoriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empleados1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empleados1.Designer.cs">
+      <DependentUpon>empleados1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flogin.Designer.cs">
+      <DependentUpon>flogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presta1.Designer.cs">
+      <DependentUpon>presta1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iniciocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iniciocs.Designer.cs">
+      <DependentUpon>Iniciocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="libros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="libros.Designer.cs">
+      <DependentUpon>libros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mysqlusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mysqlusu.Designer.cs">
+      <DependentUpon>mysqlusu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prestamos.Designer.cs">
+      <DependentUpon>prestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proveedores.Designer.cs">
+      <DependentUpon>proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="recomen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recomen.Designer.cs">
+      <DependentUpon>recomen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ugbverde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ugbverde.Designer.cs">
+      <DependentUpon>ugbverde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventanaAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanaAyuda.Designer.cs">
+      <DependentUpon>ventanaAyuda.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="acercade.resx">
+      <DependentUpon>acercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregarautores.resx">
+      <DependentUpon>agregarautores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregareditoriales.resx">
+      <DependentUpon>agregareditoriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregarempleados.resx">
+      <DependentUpon>agregarempleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregarprestamos.resx">
+      <DependentUpon>agregarprestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregarproveedores.resx">
+      <DependentUpon>agregarproveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregralibros.resx">
+      <DependentUpon>agregralibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="autores.resx">
+      <DependentUpon>autores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contactos1.resx">
+      <DependentUpon>contactos1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editoriales.resx">
+      <DependentUpon>editoriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empleados1.resx">
+      <DependentUpon>empleados1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flogin.resx">
+      <DependentUpon>flogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presta1.resx">
+      <DependentUpon>presta1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iniciocs.resx">
+      <DependentUpon>Iniciocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="libros.resx">
+      <DependentUpon>libros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mysqlusu.resx">
+      <DependentUpon>mysqlusu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prestamos.resx">
+      <DependentUpon>prestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="proveedores.resx">
+      <DependentUpon>proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recomen.resx">
+      <DependentUpon>recomen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ugbverde.resx">
+      <DependentUpon>ugbverde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanaAyuda.resx">
+      <DependentUpon>ventanaAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bibliotecaDataSet.xsc">
+      <DependentUpon>bibliotecaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bibliotecaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bibliotecaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bibliotecaDataSet.xss">
+      <DependentUpon>bibliotecaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
